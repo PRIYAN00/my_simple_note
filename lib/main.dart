@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'views/note_list_view.dart';
+import 'package:my_simple_note/welcome_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MySimpleNote',
+      title: 'Note App with Flutter',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: NoteListView(),
+      home: WelcomeScreen(),
     );
   }
 }
